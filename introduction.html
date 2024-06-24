@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李津旭的个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #77aaff;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px 0 20px 0;
+            border-bottom: #e8491d 1px solid;
+        }
+        .dark {
+            padding: 15px;
+            background: #333;
+            color: #fff;
+            margin-top: 10px;
+        }
+        .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            margin: 10px;
+            background: #add8e6; /* 浅蓝色 */
+            border: #ccc 1px solid;
+            color: #000; /* 黑色字体 */
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>李津旭</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#about">关于我</a></li>
+                    <li><a href="#projects">项目展示</a></li>
+                    <li><a href="#education">教育背景</a></li>
+                    <li><a href="#skills">技能</a></li>
+                    <li><a href="#awards">获奖经历</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <p>我叫李津旭，目前就读于上海海事大学通信工程专业，预期于2026年6月毕业。我对数据建模、数据分析和嵌入式系统开发有着浓厚的兴趣，并在Kaggle和阿里天池比赛中取得了优异的成绩。</p>
+        </div>
+    </section>
+
+    <section id="projects" class="dark">
+        <div class="container">
+            <h2>项目展示</h2>
+            <div class="box">
+                <h3>Titanic: Machine Learning for Disaster</h3>
+                <p>在这个项目中，我使用了Titanic数据集来预测乘客的生还情况。数据分析过程包括数据清洗、缺失值处理、特征工程、模型构建和优化。通过逻辑回归、随机森林等模型进行预测，最终通过交叉验证和参数调整提高了模型的准确性。<a href="https://www.kaggle.com/work">项目链接</a></p>
+            </div>
+            <div class="box">
+                <h3>House Prices: Advanced Regression Techniques</h3>
+                <p>此项目旨在预测房价。数据分析包括数据预处理、特征选择、特征工程（如对数变换、标准化处理）等。使用了多种回归模型，包括线性回归、Lasso回归和XGBoost，并通过网格搜索和交叉验证优化模型性能。<a href="https://www.kaggle.com/work">项目链接</a></p>
+            </div>
+            <div class="box">
+                <h3>Digit Recognizer</h3>
+                <p>这个项目利用MNIST数据集进行手写数字识别。数据处理步骤包括数据标准化和图像增强。使用了卷积神经网络（CNN）进行模型构建，并通过调整网络结构和参数优化模型，最终取得了较高的识别准确率。<a href="https://www.kaggle.com/work">项目链接</a></p>
+            </div>
+            <div class="box">
+                <h3>基于树莓派搭建无人船实时测速测距系统</h3>
+                <p>开发了无人船实时测速测距系统，利用YOLO系列算法和GPS传感器技术，实时监测和测量两艘无人船之间的距离、相对速度和夹角。该系统在海上巡逻、环境监测和海洋研究中具有广泛应用。</p>
+            </div>
+            <div class="box">
+                <h3>团队开发游戏</h3>
+                <p>参与吉比特未来游戏制作人大赛，开发了“赏金对决-地下大只佬的金金金金之战”。项目详情参见<a href="https://b23.tv/GebgG49">这里</a>。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>教育背景</h2>
+            <p>上海海事大学 (2022/10 - 2026/06)</p>
+            <p>通信工程 | 本科</p>
+            <p>GPA: 85.0 | 成绩排名：前10%</p>
+        </div>
+    </section>
+
+    <section id="skills" class="dark">
+        <div class="container">
+            <h2>技能</h2>
+            <ul>
+                <li>数据建模：熟练</li>
+                <li>Python：精通</li>
+                <li>MS Excel：熟练</li>
+                <li>Matlab：熟练</li>
+                <li>C/C++：良好</li>
+                <li>MS WORD：熟练</li>
+                <li>MySQL：熟练</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="awards">
+        <div class="container">
+            <h2>获奖经历</h2>
+            <p>上海海事大学奖学金 (2023/11)</p>
+        </div>
+    </section>
+
+    <section id="contact" class="dark">
+        <div class="container">
+            <h2>联系方式</h2>
+            <p>电话: +86 18248745839</p>
+            <p>邮箱: lijinxu037@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>李津旭的个人网页 &copy; 2024</p>
+    </footer>
+</body>
+</html>
